@@ -1,0 +1,82 @@
+html{
+	height :100
+	margin:0px;
+}
+.text{	
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 17px;
+}
+.iconspaces{
+	padding: 0px 5px 0px 50px;
+	margin-bottom: 10px;
+}
+body{
+	padding-top: 45%;
+	padding: 70px 70px;
+}
+
+.jumbotron{ 
+	padding: 10px 0px 10px 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+
+.navbar-inverse .navbar-brand{
+	color: white;
+
+}
+.navtext{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.navbarbox{
+	padding: 5px;
+}
+.iconspace{
+	padding-right: 40px;
+	margin-right: 40px;
+}
+.iconspaces2{
+	padding: 0px 70px 5px 2px;
+}
+hr{
+	border-color: black;
+}
+.jumbtron{
+	background-color: #fff;
+	color:yellow;
+	margin-top: 20px;
+	padding-top: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-right: 0px; 
+	padding-right:110px;
+	padding-left: 110px;
+	padding-bottom: 10px;
+}
+.pushup{
+	margin-bottom: 50px;
+
+}
+.nav-brand-text{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: black;
+	text-decoration: none;
+}
+a{
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+	color:rgb(256,89,92);
+}
+.footer{
+	margin-top: 40%;	
+}
+hr{
+	border-color: black;
+
+}

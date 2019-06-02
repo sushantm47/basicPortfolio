@@ -1,0 +1,214 @@
+body{
+font-family: 'Inconsolata', monospace;
+padding-top: 100px;
+height: 100%;
+width:100%;
+background:rgb(1,141,175);
+
+}
+
+.jumbotron h1{
+	padding-top:20px;
+	padding-bottom: 0px; 
+	font-family: 'Exo', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 5em;
+}
+
+.jumbotron h4{
+	text-align: center;
+}
+
+nav li a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: white;
+
+}
+
+
+.jumbotron{
+	background-color: white;
+}
+
+
+.navbar-inverse{
+	background-color: black;	
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+	padding: 30px;
+}
+
+.navbar-inverse .navbar-brand img{
+		display: block;
+	width: 15%;
+	height:60px;
+	background:black ;
+	position: fixed;
+	top:0;
+
+	margin-top: 12px;
+		margin-bottom: 15px;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	
+		background: white;
+}
+.navbar-header a{
+	padding-top: 15px;
+}
+
+@media(max-width: 768px){
+	.navbar-inverse .navbar-brand img{
+	display: block;
+	width: 25%;
+	height:28px;
+	background:black ;
+	position: fixed;
+	top:0;
+
+	margin-top: 12px;
+		margin-bottom: 12px;
+	padding: 0px 0px;
+	box-sizing: border-box;
+	
+		background: white;}
+.navbar-header .navabar-brand a{
+	padding-top: 0px;
+}
+}
+
+.nfooter{
+	background-color: black;
+}
+
+.nfooter .thumbnail{
+	/*background: rgba(0,0,0,0.2); */
+	background: grey;
+	border: none; 
+	margin-bottom: 0px; 
+}
+
+.nfooter .menu1 p{
+	padding-top: 6px;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 2px;
+	}
+.nfooter .menu1 hr{
+	margin-bottom: 12px;
+	margin-top: 12px;
+	}
+
+
+
+
+.nfooter .menu1 ul{
+	list-style-type: none;
+	margin:0px;
+	padding:20px 0px;
+	text-align:left;
+	 }
+.nfooter .menu1 ul li{
+	margin: 0px 20px;
+}
+
+.nfooter .menu1 ul li a{
+	font-family: arial;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 500;
+	color:#fff;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+}
+.nfooter .menu1 ul li a:hover{
+	background: rgba(0,0,0,0.1);
+}
+
+
+.nfooter .menu2 h2{
+	padding-top: 18px;
+	padding-left:20px; 
+	color: white;
+	font-size: 16px;
+	/*text-align: center;*/
+	margin-bottom: 2px;
+	}
+.nfooter .menu2 p{
+	color: white;
+	font-size: 14px;
+	padding-left:20px;
+	/*text-align: center;*/
+	margin-bottom: 2px;
+	}
+
+.nfooter .menu2 .socialicons p{
+	padding-top: 30px;
+	font-size: 16px;
+}	
+.nfooter .menu2 .socialicons hr{
+	margin-bottom: 08px;
+	margin-top: 08px;
+	}
+
+.nfooter .menu2 .socialicons ul{
+	margin:0px;
+	padding: 10px;
+	text-align: center;
+}
+
+
+.nfooter .menu2 .socialicons ul li{
+	/*display:inline-block;*/
+	list-style: none;
+	display: inline-block;
+	margin: 0px 10px;
+	width:50px;
+	height:50px;
+	margin:5px 10px;
+	border-radius:50%;
+	background-color: lightgrey;	
+}
+
+.nfooter .menu2 .socialicons ul li a{
+	padding-top: 10px;
+	color:black;
+	font-size: 15px;
+	display: block;
+}
+
+.nfooter .menu3 p{
+	padding: 10px 20px 20px 20px;
+	text-align:left;
+	font-size: 15px;
+	color: white; 
+}
+
+.nfooter .menu3 h2{
+	font-size: 18px;
+	padding: 18px 20px 0px 20px;
+	text-align:left;
+	color: white; 
+}
+
+.nfooter .menu3 .loc{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.footer-bottom{
+	width:100%;
+	height:auto;
+	margin:auto;
+	background-color:lightgrey;	
+	padding: 5px;
+	text-align: center;
+	font-family: 'Lato',sans-serif;
+	font-weight: 600px;
+	padding-bottom: 0.1px; 
+}
