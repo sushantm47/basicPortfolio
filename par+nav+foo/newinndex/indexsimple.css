@@ -294,7 +294,7 @@ nav li a {
 .img-slider{
 	margin-top:70px;
 	height: auto;
-    min-height: 600px;
+    min-height: 100vh;
     min-width: 100%;
 	background-position: center;
 	background-size: cover;
@@ -331,12 +331,34 @@ nav li a {
 }
 
 .content1 .jumbotron p{
-	font-size: 15px;
+	opacity:0.8;
+	animation-name:fade;
+	animation-duration: 3s;
+	animation-fill-mode: forward;
+	font-size: 16px;
+	color:darkgreen;
+	transition-property: color,font-size;
+	transition-duration: 1s;
 }
 
-.content1 .jumbotron h3{
-	font-family: 'Slabo 27px', serif;
+.content1 .jumbotron p:hover{
+	color:black;
+	font-size:18px;
 }
+
+
+.content1 .jumbotron h2{
+	font-family: 'Slabo 27px', serif;
+	animation-name:fade;
+	animation-duration: 3s;
+	animation-fill-mode: forward;
+	transition:font-size;
+	transition-duration: 1s; 
+}
+.content1 .jumbotron h2:hover{
+	font-size:35px;
+}
+
 
 .content1 .jumbotron img{
 	z-index: -1;
@@ -347,3 +369,28 @@ nav li a {
 	background:white
 }
 
+.content1 .jumbotron .btn{
+	background-color: white;
+	border: #007bff 1px solid;
+	color: #007bff;
+	opacity:1;
+	padding:1rem 2rem;
+	margin-bottom:5px; 
+	justify-content: center;
+	animation-name: fade;
+    animation-duration:3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration:1s;
+}
+
+@keyframes fade{
+    0% {opacity:0}
+    100%{opacity:1}
+}
+
+.btn:hover{
+    transform:rotateY(180deg);
+    /*transform:rotateX(180deg);*/ 
+}
