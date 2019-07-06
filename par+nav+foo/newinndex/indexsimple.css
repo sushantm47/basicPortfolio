@@ -303,6 +303,9 @@ nav li a {
     animation-duration:16s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
+	position: relative;
+	/* parallax */
+	background-attachment: fixed;
 }
 
 @keyframes slider{
