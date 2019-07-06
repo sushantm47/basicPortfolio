@@ -353,6 +353,7 @@ nav li a {
 .content1 .jumbotron h2{
 	font-family: 'Slabo 27px', serif;
 	animation-name:fade;
+	animation-delay:3s;
 	animation-duration: 3s;
 	animation-fill-mode: forward;
 	transition:font-size;
@@ -389,11 +390,11 @@ nav li a {
 }
 
 @keyframes fade{
-    0% {opacity:0}
-    100%{opacity:1}
+    0% {opacity:0;font-size: 10px;}
+    100%{opacity:1;font-size: 16px;}
 }
 
 .btn:hover{
-    transform:rotateY(180deg);
+    transform:rotateY(360deg);
     /*transform:rotateX(180deg);*/ 
 }
