@@ -1,0 +1,44 @@
+.footer{
+    display: flex;
+    background: darken($primary-color,10%);
+    padding: 3rem 30rem;
+
+    .footer-item{
+        flex:1;
+        &:not(:last-child){
+            margin-right:3rem;
+        }
+        &:not(:first-child){
+            margin-top: 2rem;
+            padding: 1rem 0;
+            border-top:0.3rem white solid;
+            color: white;    
+            li{
+                margin:1rem 0;
+            }        
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+.design{
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darken($color: $body-primary, $amount: 5%);
+    color: #fff;
+    a{
+        color: #fff;
+        margin: 0 0.3rem;
+    }
+}
+
+@include mediaMd{
+    .design{
+        font-size: 0.8rem;
+    }
+}

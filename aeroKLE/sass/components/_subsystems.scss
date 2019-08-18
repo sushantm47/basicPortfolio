@@ -1,0 +1,96 @@
+.subsystems{
+    display: flex;
+    color: white;
+    height: auto;
+    h1{
+        font-size: 2rem;
+    }
+
+    .container{
+        width:100%;
+    }
+
+    .subsystems-holder{
+        display: flex;
+        margin-top: 5rem;
+        box-shadow: 0 0 20px rgba(black,0.2);
+
+        .subsystem-selector{
+            background : $body-secondary;
+            display: flex;
+            .subsystem-button{
+                font-size: 1.2rem;
+            }
+            .sub-content{
+                display: none;
+            }
+            flex:2;
+            flex-direction: column;
+        }
+
+        .subsystem-intro{
+            flex:4;
+            display: flex;
+            flex-direction: column;
+            padding:1rem;
+            background: darken($color: #322f2f, $amount: 5%);
+            align-items: center;
+            justify-content: center;
+            
+            .info.disappear{
+                display: none;
+            }
+            .sub-text{
+                display: none;
+                img{
+                    width: 6rem;
+                    margin-bottom: 2rem;
+                }
+
+                &.appear{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    animation: appear-with-delay 500ms ease-in 0s 1;
+                }
+            }
+        }
+    }
+}
+
+@include mediaMd{
+    .subsystems{
+        .subsystems-holder{
+            .subsystem-selector{
+                .subsystem-button:not(:nth-child(11)){
+                    border-bottom: 1px solid darken($color: #322f2f, $amount: 5%);
+                }
+                .sub-content{
+                    display: flex;
+                    background: darken($color: #322f2f, $amount: 5%);
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 0;
+                    transition: height 500ms ease-out;
+                    overflow: hidden;
+                    img{
+                        width: 5rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+                .subsystem-button:focus + .sub-content{
+                    padding: 1rem;
+                    height: 17rem;
+                    img,p{
+                        animation: appear-with-delay 1500ms ease-in 0s 1;
+                    }
+                }
+            }
+            .subsystem-intro{
+                display: none;
+            }
+        }
+    }
+}

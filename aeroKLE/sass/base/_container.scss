@@ -1,0 +1,28 @@
+.container{
+    max-width: 60rem;
+    width: 100%;
+    flex:1;
+    justify-self: center;
+    align-self: center;
+    margin: 7rem 0;
+}
+
+@include mediaMd{
+    .container{
+        margin:5rem 0;
+        max-width: 45rem;
+    }
+}
+
+@include mediaSm{
+    .container{
+        margin:5rem 2rem;
+        max-width: 35rem;
+    }
+}
+
+@include mediaXs{
+    .container{
+        max-width: 22rem;
+    }
+}

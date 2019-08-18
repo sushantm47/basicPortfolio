@@ -1,0 +1,33 @@
+
+@keyframes scale{
+    0%{
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    100%{
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+}
+
+@keyframes appear{
+    0%,40%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes appear-with-delay{
+    0%,35%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

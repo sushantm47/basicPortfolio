@@ -1,0 +1,49 @@
+*,*::after,*::before{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    text-emphasis: none;
+    &:focus{
+        outline: none;
+        color:$text-color;
+    }
+}
+
+input:focus{
+    outline: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+section{
+    background: $body-primary;
+    width: 100vw;
+    height: 100vh;
+    
+    &:not(:nth-child(2)){
+        display: flex;
+        flex-direction: column;
+    }
+
+    &:nth-child(2n+1){
+        background: $body-secondary;
+    }
+}
+
+@include mediaSm{
+    section{
+        padding: 0 0.5rem
+    }
+}

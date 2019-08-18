@@ -1,0 +1,42 @@
+.button{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 200ms ease-in;
+    &:focus{
+        outline: none;
+        border: none;
+    }
+
+    &.button-primary{
+        background: $primary-color;
+        color: #fff;
+
+        &:hover{
+            background: darken($color: $primary-color, $amount: 15%)
+        }
+    }
+
+    &.button-secondary{
+        background: $secondary-color;
+        color: $primary-color;
+        &:hover{
+            background: darken($color: $secondary-color, $amount: 15%)
+        }
+    }
+
+    &.subsystem-button{
+        color: #a9a7a7;
+        background: #322f2f;
+
+
+        &:hover,&:focus{
+            background: darken($color: #322f2f, $amount: 5%)
+        }
+    }
+}
